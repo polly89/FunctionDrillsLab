@@ -11,8 +11,10 @@
   Call the function.
 */
 
-//CODE HERE
-
+function helloWorld () {
+  console.log("Hello, World!")
+}
+helloWorld()
 
 ////////////////// PROBLEM 2 ////////////////////
 
@@ -20,7 +22,10 @@
     Write an arrow function called 'jsNinja' that returns the string: 'I am a JavaScript ninja!'
 */
 
-//CODE HERE
+const jsNinja = () => {
+  return 'I am a JavaScript ninja!'
+}
+console.log(jsNinja())
 
 
 ////////////////// PROBLEM 3 ////////////////////
@@ -30,7 +35,11 @@
   Call the function, passing in an argument.
 */
 
-//CODE HERE
+function printName(name) {
+  console.log(name)
+}
+
+printName('Cameron')
 
 
 ////////////////// PROBLEM 4 ////////////////////
@@ -43,8 +52,11 @@
   Make sure to call your function and pass in an argument.
 */
 
-//CODE HERE
+function greeting(name){
+  console.log(`Hello, ${name}`);
+}
 
+greeting("Jake")
 
 ////////////////// PROBLEM 5 ////////////////////
 
@@ -57,7 +69,16 @@
     Brownie points if you use a ternary statement (only spend significant time on this if you have wiggle room)
 */
 
-//CODE HERE
+const compareNums = (num1, num2) => {
+if(num1 > num2){
+  return num1
+} else {
+  return num2
+}
+}
+console.log(compareNums(6, 5))
+
+
 
 
 ////////////////// PROBLEM 6 ////////////////////
@@ -68,7 +89,14 @@
   Create a variable outside the function called 'sum' and set it equal to add invoked (called), passing in 2 arguments.
 */
 
-//CODE HERE
+function add(num, num1){
+num = +num
+num1 = +num1
+return num + num1
+}
+
+const sum = add(1, "13")
+console.log(sum)
 
 
 ////////////////// PROBLEM 7 ////////////////////
@@ -84,7 +112,7 @@ const exclaim = function(str) {
 
 // console.log('arrow')
 // console.log('declaration')
-// console.log('expression')
+console.log('expression')
 
 
 
@@ -99,7 +127,7 @@ const exclaimTwo = str => {
   return str.toUpperCase() + '!!!'
 }
 
-// console.log('arrow')
+console.log('arrow')
 // console.log('declaration')
 // console.log('expression')
 
@@ -109,7 +137,7 @@ const exclaimTwo = str => {
 
   Brownie points if you use a template string
 */
-
+const exclaimThree = ()
 
 
 ////////////////// PROBLEM 9 ////////////////////
