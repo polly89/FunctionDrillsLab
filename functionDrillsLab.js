@@ -137,8 +137,9 @@ console.log('arrow')
 
   Brownie points if you use a template string
 */
-const exclaimThree = ()
+const exclaimThree = str => `${str.toUpperCase()} + '!!!'`
 
+console.log(exclaimThree)
 
 ////////////////// PROBLEM 9 ////////////////////
 
@@ -152,7 +153,7 @@ function exclaimFour(str) {
 }
 
 // console.log('arrow')
-// console.log('declaration')
+console.log('declaration')
 // console.log('expression')
 
 
@@ -165,8 +166,20 @@ function exclaimFour(str) {
   Create a variable called 'nameGreeting' and set it equal to your function invoked (called) passing in an argument.
 */
 
-//CODE HERE
+function nameCheck(name) {
+  if(name === "Steven"){
+  return "What is up Steven?"
 
+  }else if (name === "Bryan"){
+  return "Hey Brian!"
+
+  } else{
+    return `Cool name, ${name}`
+  }    
+} 
+
+let nameGreeting = nameCheck('Steven')
+console.log(nameCheck('Tom'))
 
 ////////////////// PROBLEM 11 ////////////////////
 /*
@@ -178,8 +191,23 @@ function exclaimFour(str) {
   Create a variable called 'colorRating' and set it equal to faveColorFinder invoked (called), passing in an argument.
 */
 
-//CODE HERE
+function faveColorFinder(color){ 
+  if(color === "red"){
+  return "red is a great color"
 
+} else if(color === "green"){
+  return "green is a solid favrite color"
+
+}else if(color === "black"){
+  return "so trendy"
+
+}else{
+  return "You need to evaluate your favorite color choice"
+}
+}
+
+let colorRatng = faveColorFinder('red')
+console.log(faveColorFinder('pink'))
 
 ////////////////// PROBLEM 12 ////////////////////
 let namesArr = ['Cameron', 'Riley', 'Eric', 'Brenna', 'Karl']
@@ -189,8 +217,12 @@ let namesArr = ['Cameron', 'Riley', 'Eric', 'Brenna', 'Karl']
   Call the function, passing in the `namesArr` array (above).
 */
 
-//CODE HERE
+function printAllNames(namesArr){
+}for(let i = 0; i < namesArr.length; i++){
+console.log(namesArr[i])
+}
 
+printAllNames(namesArr)
 
 ////////////////// PROBLEM 13 ////////////////////
 /*
@@ -200,8 +232,17 @@ let namesArr = ['Cameron', 'Riley', 'Eric', 'Brenna', 'Karl']
   Outside the function, create a variable called `oddChecker` and set it equal to your function invoked, making sure to pass in an argument.
 */
 
-//CODE HERE
+function thatsOdd(number){
+  if(number % 2 === 0 ){
+  return "That's not odd" 
 
+} else {
+  return "That is odd indeed!"
+}
+}
+
+let oddChecker = thatsOdd(3)
+console.log(thatsOdd(4))
 
 ////////////////// PROBLEM 14 ////////////////////
 
@@ -213,8 +254,8 @@ let namesArr = ['Cameron', 'Riley', 'Eric', 'Brenna', 'Karl']
     we would expect the function to return 'Sharknado is the best movie ever!'
 */
 
-//CODE HERE
-
+const bestMovie = (str) => {return `${str}`+ " is the best movie ever!"}
+console.log(bestMovie('"Infinity Wars"'))
 
 ////////////////// PROBLEM 15 ////////////////////
 let bigOrSmallArray = [1,101, 102, 2, 103, 4, 5, 6, 107]
@@ -227,7 +268,19 @@ let bigOrSmallArray = [1,101, 102, 2, 103, 4, 5, 6, 107]
   Return the answers array inside of the function to a variable called `arrayEvaluator`.
 */
 
-//CODE HERE
+function bigOrSmall(bigOrSmallArray){ 
+let answers = []
+for(let i = 0; i < bigOrSmallArray.length; i++){
+if(bigOrSmallArray[i] > 100) {
+  answers.push('big')
+} else{
+  answers.push('small') 
+}
+}
+return answers
+}
+let arrayEvaluator = bigOrSmall(bigOrSmallArray)
+console.log(bigOrSmall(bigOrSmallArray))
 
 
 ////////////////// PROBLEM 16 ////////////////////
